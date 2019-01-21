@@ -1,0 +1,112 @@
+Train on 14350 samples, validate on 1435 samples
+Epoch 1/5
+2019-01-21 17:02:43.782172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-21 17:02:43.782209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-21 17:02:43.782219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-21 17:02:43.782226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-21 17:02:43.782425: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7823 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+14350/14350 [==============================] - 15s 1ms/step - loss: 0.1486 - acc: 0.9337 - val_loss: 0.0771 - val_acc: 0.9688
+Epoch 2/5
+14350/14350 [==============================] - 14s 978us/step - loss: 0.0735 - acc: 0.9692 - val_loss: 0.0487 - val_acc: 0.9809
+Epoch 3/5
+14350/14350 [==============================] - 14s 973us/step - loss: 0.0619 - acc: 0.9739 - val_loss: 0.0413 - val_acc: 0.9840
+Epoch 4/5
+14350/14350 [==============================] - 14s 972us/step - loss: 0.0561 - acc: 0.9769 - val_loss: 0.0393 - val_acc: 0.9851
+Epoch 5/5
+14350/14350 [==============================] - 14s 967us/step - loss: 0.0517 - acc: 0.9788 - val_loss: 0.0362 - val_acc: 0.9865
+14350/14350 [==============================] - 1s 54us/step
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            multiple                  0         
+_________________________________________________________________
+dense (Dense)                multiple                  2176      
+_________________________________________________________________
+dropout (Dropout)            multiple                  0         
+_________________________________________________________________
+dense_1 (Dense)              multiple                  16512     
+_________________________________________________________________
+dropout_1 (Dropout)          multiple                  0         
+_________________________________________________________________
+dense_2 (Dense)              multiple                  8256      
+_________________________________________________________________
+dropout_2 (Dropout)          multiple                  0         
+_________________________________________________________________
+dense_3 (Dense)              multiple                  325       
+=================================================================
+Total params: 27,269
+Trainable params: 27,269
+Non-trainable params: 0
+_________________________________________________________________
+Errors:
+
+Test sample 10, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 136, actual label is [1 0 0 0 0] but predicted as [1 0 0 1 0]
+Test sample 177, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 0]
+Test sample 185, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 234, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 236, actual label is [1 0 0 0 0] but predicted as [1 0 0 1 0]
+Test sample 242, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 0]
+Test sample 251, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 257, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 273, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 283, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 287, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 1]
+Test sample 327, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 375, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 383, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 451, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 458, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 463, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 480, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 486, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 509, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 513, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 518, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 555, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 565, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 570, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 583, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 589, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 615, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 629, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 642, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 674, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 682, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 683, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 702, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 705, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 1]
+Test sample 711, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 719, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 752, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 757, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 765, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 1]
+Test sample 815, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 834, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 856, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 877, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 889, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 1]
+Test sample 960, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 1]
+Test sample 965, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 970, actual label is [1 0 0 0 0] but predicted as [1 0 0 0 1]
+Test sample 1003, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1013, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 1026, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 1087, actual label is [1 0 0 0 0] but predicted as [1 0 0 1 0]
+Test sample 1105, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1141, actual label is [1 0 0 1 0] but predicted as [1 0 0 0 1]
+Test sample 1157, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 1158, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 1170, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 1]
+Test sample 1193, actual label is [1 1 0 0 0] but predicted as [1 0 0 0 0]
+Test sample 1204, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1220, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1228, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 1282, actual label is [1 0 0 0 1] but predicted as [1 0 0 0 0]
+Test sample 1303, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 1]
+Test sample 1312, actual label is [1 0 0 0 0] but predicted as [1 0 0 0 1]
+Test sample 1361, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1396, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Test sample 1431, actual label is [1 0 0 0 1] but predicted as [1 0 0 1 0]
+Accuracy is 0.9526
+testing done
